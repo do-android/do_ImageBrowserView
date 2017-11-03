@@ -1,0 +1,10 @@
+*.class
+*.apk
+bin/
+gen/
+.settings/
+proguard/
+*.classpath
+/doExt_do_ImageBrowserView/libs/docore.jar
+/doExt_do_ImageBrowserView/do_build.xml
+/doExt_do_ImageBrowserView/do_ImageBrowserView.zip

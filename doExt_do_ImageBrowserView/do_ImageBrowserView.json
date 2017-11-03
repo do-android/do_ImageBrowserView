@@ -1,0 +1,93 @@
+{
+  "ID": "do_ImageBrowserView",
+  "IsContainer": "0",
+  "Type": "UI",
+  "UIType": "Layout",
+  "Name": "图片预览",
+  "Version": "Internal",
+  "Description": "这个组件用于浏览大量网络或本地图片，图片路径可以http://链接或本地data://、source://目录，支持手势缩放原图，多图片支持左右滑动预览",
+  "Icon": "",
+  "BBS": "",
+  "Keyword": "",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "index",
+      "Name": "索引",
+      "Type": "Number",
+      "Type_JavaScript": "Number",
+      "DefaultValue": "0",
+      "EditType": "1",
+      "Group": "",
+      "Description": "设置当前视图索引值，默认为0",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "indexChanged",
+      "Description": "切换图片后触发该事件",
+      "ReturnType": "String",
+      "ReturnType_JavaScript": "String",
+      "ReturnDesc": "返回当前index值"
+    },
+    {
+      "ID": "longTouch",
+      "Description": "长按图片触发",
+      "ReturnType": "Node",
+      "ReturnType_JavaScript": "Node",
+      "ReturnDesc": "返回当前index值，如:{'index':1}"
+    },
+    {
+      "ID": "touch",
+      "Description": "点击图片触发",
+      "ReturnType": "Node",
+      "ReturnType_JavaScript": "Node",
+      "ReturnDesc": "返回当前index值,如：{'index':1}"
+    }
+  ],
+  "syncMethodes": [
+    {
+      "ID": "show",
+      "Name": "绑定数据",
+      "Description": "给视图绑定显示的图片",
+      "ReturnType": "",
+      "ReturnType_JavaScript": "",
+      "ReturnDesc": "",
+      "Paras": [
+        {
+          "ID": "data",
+          "Name": "",
+          "Type": "Node",
+          "Type_JavaScript": "Node",
+          "Required": 1,
+          "DefaultValue": "",
+          "Description": "数据结构[{ source : '', init : ''},{source :'' , init : ''}, ..... ]其中source 为原图，init为缩略图"
+        }
+      ]
+    }
+  ],
+  "asyncMethodes": []
+}
